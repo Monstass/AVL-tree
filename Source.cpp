@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 #include <fstream>
 #include <iomanip>
@@ -12,7 +12,7 @@ using std::endl;
 using std::string;
 
 /*
-    Структура дерева
+    РЎС‚СЂСѓРєС‚СѓСЂР° РґРµСЂРµРІР°
  */
 struct avl_node
 {
@@ -29,7 +29,7 @@ struct avl_node
 }*root;
 
 /*
-     Класс дерева
+     РљР»Р°СЃСЃ РґРµСЂРµРІР°
  */
 class avlTree
 {
@@ -78,32 +78,32 @@ int main()
     do
     {
         cout << "\t\t::::::::::::::::::::::::::::::::::::::::::::::::" << endl;
-        cout << "\t\t::::1 Вставить новый элемент::::::::::::::::::::" << endl;
-        cout << "\t\t::::2 Удалить элемент:::::::::::::::::::::::::::" << endl;
-        cout << "\t\t::::3 Вывод дерева на экран:::::::::::::::::::::" << endl;
-        cout << "\t\t::::4 Симметричный обход::::::::::::::::::::::::" << endl;
-        cout << "\t\t::::5 Высота дерева:::::::::::::::::::::::::::::" << endl;
-        cout << "\t\t::::6 Вывод содержимого:::::::::::::::::::::::::" << endl;
-        cout << "\t\t::::7 Нахождение длины пути:::::::::::::::::::::" << endl;
-        cout << "\t\t::::0 Выход:::::::::::::::::::::::::::::::::::::" << endl;
+        cout << "\t\t::::1 Р’СЃС‚Р°РІРёС‚СЊ РЅРѕРІС‹Р№ СЌР»РµРјРµРЅС‚::::::::::::::::::::" << endl;
+        cout << "\t\t::::2 РЈРґР°Р»РёС‚СЊ СЌР»РµРјРµРЅС‚:::::::::::::::::::::::::::" << endl;
+        cout << "\t\t::::3 Р’С‹РІРѕРґ РґРµСЂРµРІР° РЅР° СЌРєСЂР°РЅ:::::::::::::::::::::" << endl;
+        cout << "\t\t::::4 РЎРёРјРјРµС‚СЂРёС‡РЅС‹Р№ РѕР±С…РѕРґ::::::::::::::::::::::::" << endl;
+        cout << "\t\t::::5 Р’С‹СЃРѕС‚Р° РґРµСЂРµРІР°:::::::::::::::::::::::::::::" << endl;
+        cout << "\t\t::::6 Р’С‹РІРѕРґ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ:::::::::::::::::::::::::" << endl;
+        cout << "\t\t::::7 РќР°С…РѕР¶РґРµРЅРёРµ РґР»РёРЅС‹ РїСѓС‚Рё:::::::::::::::::::::" << endl;
+        cout << "\t\t::::0 Р’С‹С…РѕРґ:::::::::::::::::::::::::::::::::::::" << endl;
         cout << "\t\t::::::::::::::::::::::::::::::::::::::::::::::::\n" << endl;
 
-        cout << "\nВыберите нужное действие и нажмите Enter: ";
+        cout << "\nР’С‹Р±РµСЂРёС‚Рµ РЅСѓР¶РЅРѕРµ РґРµР№СЃС‚РІРёРµ Рё РЅР°Р¶РјРёС‚Рµ Enter: ";
         cin >> choice;
 
         switch (choice)
         {
         case 1:
-            cout << "Добавление нового элемента" << endl;
-            cout << "Введите элемент: ";
+            cout << "Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ СЌР»РµРјРµРЅС‚Р°" << endl;
+            cout << "Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚: ";
             cin >> key;
-            cout << "Введите район: ";
+            cout << "Р’РІРµРґРёС‚Рµ СЂР°Р№РѕРЅ: ";
             std::getline(cin >> std::ws, district);
-            cout << "Введите адрес: ";
+            cout << "Р’РІРµРґРёС‚Рµ Р°РґСЂРµСЃ: ";
             std::getline(cin, addres);
             while (1)
             {
-                cout << "Введите количество комнат: ";
+                cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРјРЅР°С‚: ";
                 cin >> number_of_rooms;
                 if (number_of_rooms > 0)
                 {
@@ -113,12 +113,12 @@ int main()
                 {
                     cin.clear();
                     cin.ignore((numeric_limits<streamsize>::max)(), '\n');
-                    cout << "Ошибка ввода" << endl;
+                    cout << "РћС€РёР±РєР° РІРІРѕРґР°" << endl;
                 }
             }
             while (1)
             {
-                cout << "Введите общую площадь: ";
+                cout << "Р’РІРµРґРёС‚Рµ РѕР±С‰СѓСЋ РїР»РѕС‰Р°РґСЊ: ";
                 cin >> total_area;
                 if (total_area > 0)
                 {
@@ -128,12 +128,12 @@ int main()
                 {
                     cin.clear();
                     cin.ignore((numeric_limits<streamsize>::max)(), '\n');
-                    cout << "Ошибка ввода" << endl;
+                    cout << "РћС€РёР±РєР° РІРІРѕРґР°" << endl;
                 }
             }
             while (1)
             {
-                cout << "Введите жилую площадь: ";
+                cout << "Р’РІРµРґРёС‚Рµ Р¶РёР»СѓСЋ РїР»РѕС‰Р°РґСЊ: ";
                 cin >> living_area;
                 if (living_area > 0)
                 {
@@ -143,12 +143,12 @@ int main()
                 {
                     cin.clear();
                     cin.ignore((numeric_limits<streamsize>::max)(), '\n');
-                    cout << "Ошибка ввода" << endl;
+                    cout << "РћС€РёР±РєР° РІРІРѕРґР°" << endl;
                 }
             }
             while (1)
             {
-                cout << "Введите год постройки дома: ";
+                cout << "Р’РІРµРґРёС‚Рµ РіРѕРґ РїРѕСЃС‚СЂРѕР№РєРё РґРѕРјР°: ";
                 cin >> bulding_year;
                 if (bulding_year > 0)
                 {
@@ -158,12 +158,12 @@ int main()
                 {
                     cin.clear();
                     cin.ignore((numeric_limits<streamsize>::max)(), '\n');
-                    cout << "Ошибка ввода" << endl;
+                    cout << "РћС€РёР±РєР° РІРІРѕРґР°" << endl;
                 }
             }
             while (1)
             {
-                cout << "Введите стоимость: ";
+                cout << "Р’РІРµРґРёС‚Рµ СЃС‚РѕРёРјРѕСЃС‚СЊ: ";
                 cin >> price;
                 if (price > 0)
                 {
@@ -173,17 +173,17 @@ int main()
                 {
                     cin.clear();
                     cin.ignore((numeric_limits<streamsize>::max)(), '\n');
-                    cout << "Ошибка ввода";
+                    cout << "РћС€РёР±РєР° РІРІРѕРґР°";
                 }
             }
             root = tree.insert(root, key, bulding_year, 
                 number_of_rooms, price, total_area, living_area, 
                 district, addres);
-            cout << "Новый элемент добавлен успешно\n" << endl;
+            cout << "РќРѕРІС‹Р№ СЌР»РµРјРµРЅС‚ РґРѕР±Р°РІР»РµРЅ СѓСЃРїРµС€РЅРѕ\n" << endl;
             break;
         case 2:
-            cout << "Удаление элемента" << endl;
-            cout << "Введите элемент: ";
+            cout << "РЈРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°" << endl;
+            cout << "Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚: ";
             cin >> key;
             tree.remove(root, key);
 
@@ -197,15 +197,15 @@ int main()
 
             break;
         case 5:
-            cout << "Высота дерева: " << tree.height(root) - 1;
+            cout << "Р’С‹СЃРѕС‚Р° РґРµСЂРµРІР°: " << tree.height(root) - 1;
 
             break;
         case 6:
             double _price;
             while (1)
             {
-                cout << "Введите стоимость жилья для получения"
-                    " подробной информации: ";
+                cout << "Р’РІРµРґРёС‚Рµ СЃС‚РѕРёРјРѕСЃС‚СЊ Р¶РёР»СЊСЏ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ"
+                    " РїРѕРґСЂРѕР±РЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё: ";
                 cin >> _price;
                 if (_price > 0)
                 {
@@ -213,23 +213,23 @@ int main()
                 }
                 else
                 {
-                    cout << "Ошибка ввода" << endl;
+                    cout << "РћС€РёР±РєР° РІРІРѕРґР°" << endl;
                 }
             }
             tree.show_data(root, _price);
             
             break;
         case 7:
-            cout << "Нахождение пути для элемента: ";
+            cout << "РќР°С…РѕР¶РґРµРЅРёРµ РїСѓС‚Рё РґР»СЏ СЌР»РµРјРµРЅС‚Р°: ";
             cin >> key;
             tree.find_way(root, key, s);
 
             break;
         case 0:
-            cout << "\n\tЗавершение программы\n" << endl;
+            cout << "\n\tР—Р°РІРµСЂС€РµРЅРёРµ РїСЂРѕРіСЂР°РјРјС‹\n" << endl;
             break;
         default:
-            cout << "Неверный ввод\n" << endl;
+            cout << "РќРµРІРµСЂРЅС‹Р№ РІРІРѕРґ\n" << endl;
             break;
         }
         cout << endl;
@@ -242,7 +242,7 @@ int main()
 
 
 /*------------
-  Длина дерева
+  Р”Р»РёРЅР° РґРµСЂРµРІР°
 -------------- */
 int avlTree::height(avl_node* ptr)
 {
@@ -258,7 +258,7 @@ int avlTree::height(avl_node* ptr)
 }
 
 /*---------------
-    Баланс фактор 
+    Р‘Р°Р»Р°РЅСЃ С„Р°РєС‚РѕСЂ 
  ----------------*/
 int avlTree::diff(avl_node* ptr)
 {
@@ -268,7 +268,7 @@ int avlTree::diff(avl_node* ptr)
     return b_factor;
 }
 /*--------------
-   Левый поворот
+   Р›РµРІС‹Р№ РїРѕРІРѕСЂРѕС‚
  ---------------*/
 avl_node* avlTree::rr_rotation(avl_node* ptr)
 {
@@ -279,7 +279,7 @@ avl_node* avlTree::rr_rotation(avl_node* ptr)
     return temp;
 }
 /*---------------
-   Правый поворот
+   РџСЂР°РІС‹Р№ РїРѕРІРѕСЂРѕС‚
  ----------------*/
 avl_node* avlTree::ll_rotation(avl_node* ptr)
 {
@@ -291,7 +291,7 @@ avl_node* avlTree::ll_rotation(avl_node* ptr)
 }
 
 /*------------------------
-  Большой правый поворот
+  Р‘РѕР»СЊС€РѕР№ РїСЂР°РІС‹Р№ РїРѕРІРѕСЂРѕС‚
  -----------------------*/
 avl_node* avlTree::lr_rotation(avl_node* ptr)
 {
@@ -302,7 +302,7 @@ avl_node* avlTree::lr_rotation(avl_node* ptr)
 }
 
 /*---------------------
-  Большой левый поворот
+  Р‘РѕР»СЊС€РѕР№ Р»РµРІС‹Р№ РїРѕРІРѕСЂРѕС‚
  ----------------------*/
 avl_node* avlTree::rl_rotation(avl_node* ptr)
 {
@@ -313,7 +313,7 @@ avl_node* avlTree::rl_rotation(avl_node* ptr)
 }
 
 /*-------------------
-  Балансировка дерева
+  Р‘Р°Р»Р°РЅСЃРёСЂРѕРІРєР° РґРµСЂРµРІР°
 ---------------------*/
 avl_node* avlTree::balance(avl_node* ptr)
 {
@@ -336,7 +336,7 @@ avl_node* avlTree::balance(avl_node* ptr)
 }
 
 /*---------------------------
-    Добавить элемент в дерево
+    Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚ РІ РґРµСЂРµРІРѕ
 -----------------------------*/
 avl_node* avlTree::insert(avl_node* ptr, int value, 
     int bulding_year, int number_of_rooms, double price, 
@@ -374,13 +374,13 @@ avl_node* avlTree::insert(avl_node* ptr, int value,
 }
 
 /*------------------
-   Удаление Элемента
+   РЈРґР°Р»РµРЅРёРµ Р­Р»РµРјРµРЅС‚Р°
  -------------------*/
 avl_node* avlTree::remove(avl_node* ptr, int value)
 {
     if (!ptr)
     {
-        cout << "Элемент не найден";
+        cout << "Р­Р»РµРјРµРЅС‚ РЅРµ РЅР°Р№РґРµРЅ";
         return 0;
     }
     if (value < ptr->key)
@@ -391,7 +391,7 @@ avl_node* avlTree::remove(avl_node* ptr, int value)
     {
         avl_node* q = ptr->left;
         avl_node* r = ptr->right;
-        cout << "Элемент удален";
+        cout << "Р­Р»РµРјРµРЅС‚ СѓРґР°Р»РµРЅ";
         delete ptr;
         if (!r) return q;
         avl_node* min = findmin(r);
@@ -403,17 +403,17 @@ avl_node* avlTree::remove(avl_node* ptr, int value)
 }
 
 /*---------------
-    Найти минимум
+    РќР°Р№С‚Рё РјРёРЅРёРјСѓРј
 -----------------*/
-avl_node* avlTree::findmin(avl_node* ptr) // поиск узла с минимальным ключом в дереве p 
+avl_node* avlTree::findmin(avl_node* ptr) // РїРѕРёСЃРє СѓР·Р»Р° СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєР»СЋС‡РѕРј РІ РґРµСЂРµРІРµ p 
 {
     return ptr->left ? findmin(ptr->left) : ptr;
 }
 
 /*-----------------
-    Удалить минимум
+    РЈРґР°Р»РёС‚СЊ РјРёРЅРёРјСѓРј
 -------------------*/
-avl_node* avlTree::removemin(avl_node* ptr) // удаление узла с минимальным ключом из дерева p
+avl_node* avlTree::removemin(avl_node* ptr) // СѓРґР°Р»РµРЅРёРµ СѓР·Р»Р° СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєР»СЋС‡РѕРј РёР· РґРµСЂРµРІР° p
 {
     if (ptr->left == 0)
         return ptr->right;
@@ -421,7 +421,7 @@ avl_node* avlTree::removemin(avl_node* ptr) // удаление узла с минимальным ключо
     return balance(ptr);
 }
 /*------------
-  Вывод дерева
+  Р’С‹РІРѕРґ РґРµСЂРµРІР°
  -------------*/
 void avlTree::display(avl_node* ptr, int level)
 {
@@ -431,7 +431,7 @@ void avlTree::display(avl_node* ptr, int level)
         display(ptr->right, level + 1);
         cout << endl;
         if (ptr == root)
-            cout << "Дерево -> ";
+            cout << "Р”РµСЂРµРІРѕ -> ";
         for (i = 0; i < level && ptr != root; i++)
             cout << "        ";
         cout << ptr->key;
@@ -439,7 +439,7 @@ void avlTree::display(avl_node* ptr, int level)
     }
 }
 /*-------------------
-    Симметричный обход
+    РЎРёРјРјРµС‚СЂРёС‡РЅС‹Р№ РѕР±С…РѕРґ
 ---------------------*/
 void avlTree::inorder(avl_node* ptr)
 {
@@ -452,7 +452,7 @@ void avlTree::inorder(avl_node* ptr)
     inorder(ptr->right);
 }
 /*------------------
-    Нахождение длины
+    РќР°С…РѕР¶РґРµРЅРёРµ РґР»РёРЅС‹
 --------------------*/
 int avlTree::find_way(avl_node* ptr, int value, int s)
 {
@@ -464,12 +464,12 @@ int avlTree::find_way(avl_node* ptr, int value, int s)
         find_way(ptr->right, value, s);
     else //  value == ptr->data
     {
-        cout << "Длина: " << s - 1;
+        cout << "Р”Р»РёРЅР°: " << s - 1;
         s = 0;
     }
 }
 /*------------------
-    Вывод информации
+    Р’С‹РІРѕРґ РёРЅС„РѕСЂРјР°С†РёРё
 --------------------*/
 void avlTree::show_data(avl_node* ptr, double price)
 {
@@ -480,17 +480,17 @@ void avlTree::show_data(avl_node* ptr, double price)
     show_data(ptr->left, price);
     if (ptr->price == price)
     {
-        cout << endl << "Данные о жилом помещении " << ptr->key 
+        cout << endl << "Р”Р°РЅРЅС‹Рµ Рѕ Р¶РёР»РѕРј РїРѕРјРµС‰РµРЅРёРё " << ptr->key 
             << endl;
-        cout << "Район: " << ptr->district << endl;
-        cout << "Адрес: " << ptr->addres << endl;
-        cout << "Количество комнат: " << ptr->number_of_rooms << 
+        cout << "Р Р°Р№РѕРЅ: " << ptr->district << endl;
+        cout << "РђРґСЂРµСЃ: " << ptr->addres << endl;
+        cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРјРЅР°С‚: " << ptr->number_of_rooms << 
             endl;
-        cout << "Общая площадь: " << ptr->total_area << endl;
-        cout << "Жилая площадь: " << ptr->living_area << endl;
-        cout << "Год постройки дома: " << ptr->bulding_year << 
+        cout << "РћР±С‰Р°СЏ РїР»РѕС‰Р°РґСЊ: " << ptr->total_area << endl;
+        cout << "Р–РёР»Р°СЏ РїР»РѕС‰Р°РґСЊ: " << ptr->living_area << endl;
+        cout << "Р“РѕРґ РїРѕСЃС‚СЂРѕР№РєРё РґРѕРјР°: " << ptr->bulding_year << 
             endl;
-        cout << "Стоимость: " << std::fixed <<
+        cout << "РЎС‚РѕРёРјРѕСЃС‚СЊ: " << std::fixed <<
             std::setprecision(2) << ptr->price << endl;
     }
     show_data(ptr->right, price);
