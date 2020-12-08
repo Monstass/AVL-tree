@@ -5,7 +5,6 @@
 #include <limits>
 #include <windows.h>
 
-using namespace std;
 using std::cin;
 using std::cout;
 using std::endl;
