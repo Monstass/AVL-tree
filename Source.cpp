@@ -5,7 +5,6 @@
 #include <limits>
 #include <windows.h>
 
-using namespace std;
 using std::cin;
 using std::cout;
 using std::endl;
@@ -112,7 +111,7 @@ int main()
                 else
                 {
                     cin.clear();
-                    cin.ignore((numeric_limits<streamsize>::max)(), '\n');
+                    cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
                     cout << "Ошибка ввода" << endl;
                 }
             }
@@ -127,7 +126,7 @@ int main()
                 else
                 {
                     cin.clear();
-                    cin.ignore((numeric_limits<streamsize>::max)(), '\n');
+                    cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
                     cout << "Ошибка ввода" << endl;
                 }
             }
@@ -142,7 +141,7 @@ int main()
                 else
                 {
                     cin.clear();
-                    cin.ignore((numeric_limits<streamsize>::max)(), '\n');
+                    cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
                     cout << "Ошибка ввода" << endl;
                 }
             }
@@ -157,7 +156,7 @@ int main()
                 else
                 {
                     cin.clear();
-                    cin.ignore((numeric_limits<streamsize>::max)(), '\n');
+                    cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
                     cout << "Ошибка ввода" << endl;
                 }
             }
@@ -172,7 +171,7 @@ int main()
                 else
                 {
                     cin.clear();
-                    cin.ignore((numeric_limits<streamsize>::max)(), '\n');
+                    cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
                     cout << "Ошибка ввода";
                 }
             }
